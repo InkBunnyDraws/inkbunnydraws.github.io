@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title> Menu </title>
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+		<script>
+			function start(){
+				sjs.open();
+
+				var menu = new sjs.Text("Menu",28, "blue");
+				menu.centerH();
+				var startBtn = new sjs.Button("Start", function(){
+					window.location = "pong.html";
+
+				var info_text = new sjs.Text("Created by Marika the InkBunny",20,"blue");
+
+				info_text.bottom().centerH();
+				})
+
+				startBtn.center();
+
+			} //end start
+		</script>
+	</head>
+	<body onload="start()">
+		<h1> Menu </h1>
+
+		<div id="target" style="margin:auto;background:grey;"></div>
+	</body>
+</html>
